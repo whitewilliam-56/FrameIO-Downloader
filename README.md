@@ -138,8 +138,6 @@ docker compose up --build -d
 
 The `-d` flag runs it in the background. The service will now listen for webhook events on port `3000`.
 
-I am testing
-
 ### View logs
 
 ```bash
