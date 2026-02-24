@@ -1,0 +1,11 @@
+{
+  "name": "frameio-sync",
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "fastify": "^4.0.0",
+    "axios": "^1.6.0",
+    "dotenv": "^16.0.0",
+    "p-queue": "^7.3.0"
+  }
+}

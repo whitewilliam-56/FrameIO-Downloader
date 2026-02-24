@@ -1,0 +1,14 @@
+services:
+  frameio-sync:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - FRAMEIO_TOKEN=${FRAMEIO_TOKEN}
+      - FRAMEIO_WEBHOOK_SECRET=${FRAMEIO_WEBHOOK_SECRET}
+      - DOWNLOAD_DIR=${DOWNLOAD_DIR}
+      - PORT=${PORT}
+    volumes:
+      - ./downloads:/app/downloads
+      - ./data:/app/data
+    restart: unless-stopped
